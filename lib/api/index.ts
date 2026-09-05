@@ -6,6 +6,7 @@ import {
   DEMO_ALLERGIES,
   DEMO_AUDIT,
   DEMO_CONFLICTS,
+  DEMO_EXERCISES,
   DEMO_HOSPITALS,
   DEMO_LAB_RESULTS,
   DEMO_MEDICATIONS,
@@ -19,6 +20,7 @@ import type {
   AuditEntry,
   ConflictItem,
   DashboardStats,
+  ExerciseEntry,
   Hospital,
   LabResult,
   MedicalReport,
@@ -117,4 +119,8 @@ export const dashboardApi = {
       }),
       latency: [200, 420],
     }),
+}
+
+export const exerciseApi = {
+  list: () => request<ExerciseEntry[]>('/exercises', { mock: () => DEMO_EXERCISES }),
 }

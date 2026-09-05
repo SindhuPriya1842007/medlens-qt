@@ -6,6 +6,7 @@ import type {
   Allergy,
   AuditEntry,
   ConflictItem,
+  ExerciseEntry,
   Hospital,
   LabResult,
   MedicalReport,
@@ -771,6 +772,93 @@ export const NUTRITION_TOPICS = [
       'A common approach balances vegetables, proteins, whole grains, and fruit.',
       'Portion needs differ from person to person.',
       'Personalized dietary plans should come from a qualified professional.',
+    ],
+  },
+]
+
+export const DEMO_EXERCISES: ExerciseEntry[] = [
+  {
+    id: 'ex-005',
+    patientId: 'patient-demo',
+    activity: 'Brisk walking',
+    durationMin: 30,
+    intensity: 'MODERATE',
+    date: '2026-04-16',
+    notes: 'Morning walk around the neighborhood.',
+    provenance: { source: 'USER_PROVIDED', aiGenerated: false, verification: 'VERIFIED' },
+  },
+  {
+    id: 'ex-004',
+    patientId: 'patient-demo',
+    activity: 'Yoga',
+    durationMin: 45,
+    intensity: 'LOW',
+    date: '2026-04-10',
+    notes: 'Gentle stretching and breathing routine.',
+    provenance: { source: 'USER_PROVIDED', aiGenerated: false, verification: 'VERIFIED' },
+  },
+  {
+    id: 'ex-003',
+    patientId: 'patient-demo',
+    activity: 'Cycling',
+    durationMin: 40,
+    intensity: 'MODERATE',
+    date: '2026-03-28',
+    notes: 'Park loop, comfortable pace.',
+    provenance: { source: 'USER_PROVIDED', aiGenerated: false, verification: 'UNVERIFIED' },
+  },
+  {
+    id: 'ex-002',
+    patientId: 'patient-demo',
+    activity: 'Swimming',
+    durationMin: 50,
+    intensity: 'HIGH',
+    date: '2026-03-15',
+    notes: 'Lap swim at community pool.',
+    provenance: { source: 'USER_PROVIDED', aiGenerated: false, verification: 'VERIFIED' },
+  },
+  {
+    id: 'ex-001',
+    patientId: 'patient-demo',
+    activity: 'Brisk walking',
+    durationMin: 25,
+    intensity: 'MODERATE',
+    date: '2026-03-02',
+    notes: null,
+    provenance: { source: 'USER_PROVIDED', aiGenerated: false, verification: 'VERIFIED' },
+  },
+]
+
+export const EXERCISE_TOPICS = [
+  {
+    id: 'general-activity',
+    title: 'General physical activity guidance',
+    summary:
+      'General educational information about physical activity. Not a treatment plan or medical advice.',
+    points: [
+      'Common guidelines suggest regular moderate activity can support overall well-being.',
+      'Activity levels should be tailored to individual capacity and any medical advice received.',
+      'This is general education — consult a qualified professional before starting a new activity.',
+    ],
+  },
+  {
+    id: 'consistency',
+    title: 'Consistency over intensity',
+    summary: 'General education on building sustainable activity habits.',
+    points: [
+      'Regular, moderate activity is often highlighted as more sustainable than occasional intense effort.',
+      'Rest and recovery are important parts of any activity routine.',
+      'Personalized guidance should come from a qualified professional.',
+    ],
+  },
+  {
+    id: 'safety',
+    title: 'Activity safety basics',
+    summary: 'General safety considerations for physical activity.',
+    points: [
+      'Warming up and cooling down are commonly recommended practices.',
+      'Stop and seek medical advice if you experience pain, dizziness, or discomfort during activity.',
+      'This is general education, not medical advice.',
     ],
   },
 ]

@@ -178,3 +178,16 @@ export interface DashboardStats {
   activeMedications: number
   allergies: number
 }
+
+export type ExerciseIntensity = 'LOW' | 'MODERATE' | 'HIGH'
+
+export interface ExerciseEntry {
+  id: string
+  patientId: string
+  activity: string
+  durationMin: number
+  intensity: ExerciseIntensity
+  date: string
+  notes: string | null
+  provenance: Provenance
+}
