@@ -73,6 +73,41 @@ export default function LandingPage() {
           }),
         }}
       />
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What does MedLens do?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'MedLens organizes medical reports and patient information into structured, traceable records. It helps users review reports, track laboratory trends, compare information, and understand AI-generated summaries.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does MedLens provide medical diagnosis or treatment decisions?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. MedLens does not provide medical diagnosis or treatment decisions. AI-generated information is labeled and should be reviewed by a qualified healthcare professional.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How does MedLens use AI?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'MedLens uses AI for tasks such as extraction, structuring, brief explanation, and categorization. Calculations, charts, and reference-range comparisons are handled by deterministic code.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
 
       <SiteHeader />
 
@@ -91,9 +126,8 @@ export default function LandingPage() {
                 <span className="text-primary">Structured. Understandable. Connected.</span>
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground text-pretty">
-                MedLens converts medical reports and patient information into structured,
-                traceable records with responsible AI assistance — so you always know what a
-                report says and where every value came from.
+               MedLens turns medical reports and patient information into clear, structured records.
+Track what a report says, where each value came from, and how information connects over time.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-3">
                 {/* <Button size="lg" render={<Link href="/register" />}>*/}
@@ -166,8 +200,8 @@ export default function LandingPage() {
               What MedLens does
             </h2>
             <p className="mt-2 text-muted-foreground">
-              A secure, structured, traceable and reviewable medical information layer — not just
-              an AI chatbot that summarizes a report.
+              A secure and structured layer for medical information.
+Review records, trace sources, and compare information without relying on a simple AI chatbot.
             </p>
           </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -200,9 +234,9 @@ export default function LandingPage() {
                 medical diagnosis or treatment decisions.
               </p>
               <p className="mt-4 text-sm text-muted-foreground">
-                AI is used only for extraction, structuring, brief explanation and categorization.
-                Reference-range comparison, calculations and charts are handled by deterministic
-                code — and every AI output is clearly labeled and traceable to its source.
+                AI helps with extraction, structuring, brief explanations, and categorization.
+Deterministic code handles calculations, reference-range comparisons, and charts.
+Every AI output is clearly labeled and linked to its source.
               </p>
             </div>
             <div className="grid gap-3 self-center">
@@ -232,8 +266,8 @@ export default function LandingPage() {
                 Security by design
               </h2>
               <p className="mt-2 text-muted-foreground">
-                MedLens is built assuming a secure backend with JWT authentication, hashed
-                passwords, protected routes and validated file uploads.
+                MedLens is designed for a secure backend.
+It supports JWT authentication, hashed passwords, protected routes, and validated file uploads.
               </p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">

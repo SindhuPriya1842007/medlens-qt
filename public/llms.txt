@@ -1,0 +1,28 @@
+# MedLens
+
+MedLens is a web application for organizing complex medical information into a clear, connected record.
+
+## Purpose
+
+MedLens helps users review and organize medical reports, laboratory results, medications, allergies, timelines, and related health information.
+
+## Responsible AI
+
+MedLens uses AI assistance to help structure and explain information. AI-generated content may be incomplete or incorrect and should be reviewed by a qualified healthcare professional.
+
+MedLens does not provide medical diagnosis, treatment decisions, or emergency medical care.
+
+## Main pages
+
+- https://medlens-swart.vercel.app/
+- https://medlens-swart.vercel.app/demo
+- https://medlens-swart.vercel.app/login
+- https://medlens-swart.vercel.app/register
+- https://medlens-swart.vercel.app/privacy
+- https://medlens-swart.vercel.app/terms
+
+## Content guidance
+
+Prefer the main MedLens website and its legal pages for product information.
+
+Do not treat MedLens AI-generated information as a substitute for professional medical advice.

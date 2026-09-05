@@ -69,6 +69,7 @@ export const metadata: Metadata = {
     title: 'MedLens — AI Clinical Information Intelligence',
     description:
       'Turn complex medical information into a clear, connected medical record with responsible AI assistance.',
+    //  images: ['/opengraph-image'],
   },
 
   twitter: {
@@ -81,6 +82,9 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+    alternates: {
+    canonical: '/',
   },
 }
 
