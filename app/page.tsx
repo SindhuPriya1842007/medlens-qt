@@ -242,39 +242,50 @@ export default function LandingPage() {
                   <ArrowRight data-icon="inline-end" />
                 </Button> */}
                 <Button
-  size="lg"
-  nativeButton={false}
-  render={<Link href="/register" />}
->
-  Get Started
-  <ArrowRight data-icon="inline-end" />
-</Button>
-                {/* <Button size="lg" variant="outline" render={<Link href="/demo" />}>
-                  Explore Demo
-                </Button> */}
-                <Button
-  size="lg"
-  variant="outline"
-  nativeButton={false}
-  render={<Link href="/demo" />}
->
-  Explore Demo
-</Button>
+                  size="lg"
+                  nativeButton={false}
+                  render={<Link href="/register" />}
+                >
+                  Get Started
+                  <ArrowRight data-icon="inline-end" />
+                </Button>
+               
               </div>
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="border-t border-border">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-8 sm:flex-row sm:px-6">
+    <footer className="border-t border-border">
+      <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-8 sm:px-6">
+        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <Logo />
-          <p className="text-center text-xs text-muted-foreground sm:text-right">
-            MedLens is a demonstration product. It does not provide medical diagnosis or
-            treatment decisions.
+
+          <div className="flex items-center gap-6">
+            <Link
+              href="/privacy"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Privacy Policy
+            </Link>
+
+            <Link
+              href="/terms"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Terms of Service
+            </Link>
+          </div>
+        </div>
+
+        <div className="border-t border-border pt-4">
+          <p className="text-center text-xs leading-relaxed text-muted-foreground sm:text-left">
+            MedLens is a demonstration product. It does not provide medical diagnosis
+            or treatment decisions.
           </p>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+        </div>
   )
 }
