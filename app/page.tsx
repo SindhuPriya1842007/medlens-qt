@@ -72,16 +72,31 @@ export default function LandingPage() {
                 report says and where every value came from.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                <Button size="lg" render={<Link href="/register" />}>
+                {/* <Button size="lg" render={<Link href="/register" />}>*/}
+                <Button size="lg" nativeButton={false} render={<Link href="/register" />}>
                   Get Started
                   <ArrowRight data-icon="inline-end" />
                 </Button>
-                <Button size="lg" variant="outline" render={<Link href="/login" />}>
-                  Sign In
-                </Button>
-                <Button size="lg" variant="ghost" render={<Link href="/demo" />}>
+                {/* <Button size="lg" variant="outline" render={<Link href="/login" />}> */}
+                <Button
+  size="lg"
+  variant="outline"
+  nativeButton={false}
+  render={<Link href="/login" />}
+>
+  Sign In
+</Button>
+                {/* <Button size="lg" variant="ghost" render={<Link href="/demo" />}>
                   Explore Demo
-                </Button>
+                </Button> */}
+                <Button
+  size="lg"
+  variant="ghost"
+  nativeButton={false}
+  render={<Link href="/demo" />}
+>
+  Explore Demo
+</Button>
               </div>
               <p className="mt-4 text-xs text-muted-foreground">
                 MedLens organizes and explains medical information. It does not provide medical
@@ -222,13 +237,29 @@ export default function LandingPage() {
                 Turn complex medical information into a clear, connected record.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-3">
-                <Button size="lg" render={<Link href="/register" />}>
+                {/* <Button size="lg" render={<Link href="/register" />}>
                   Get Started
                   <ArrowRight data-icon="inline-end" />
-                </Button>
-                <Button size="lg" variant="outline" render={<Link href="/demo" />}>
+                </Button> */}
+                <Button
+  size="lg"
+  nativeButton={false}
+  render={<Link href="/register" />}
+>
+  Get Started
+  <ArrowRight data-icon="inline-end" />
+</Button>
+                {/* <Button size="lg" variant="outline" render={<Link href="/demo" />}>
                   Explore Demo
-                </Button>
+                </Button> */}
+                <Button
+  size="lg"
+  variant="outline"
+  nativeButton={false}
+  render={<Link href="/demo" />}
+>
+  Explore Demo
+</Button>
               </div>
             </div>
           </div>

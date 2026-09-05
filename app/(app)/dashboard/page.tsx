@@ -63,10 +63,21 @@ export default function DashboardPage() {
                 <li>• {stats.data.abnormalValues} values are outside the provided reference ranges</li>
               ) : null}
             </ul>
-            <Button variant="outline" size="sm" className="mt-3" render={<Link href="/verification" />}>
+            {/* <Button variant="outline" size="sm" className="mt-3" render={<Link href="/verification" />}>
               Review now
-              <ArrowRight data-icon="inline-end" />
-            </Button>
+              <ArrowRight data-icon="inline-end" /> */}
+
+            {/* </Button> */}
+            <Button
+  variant="outline"
+  size="sm"
+  className="mt-3"
+  nativeButton={false}
+  render={<Link href="/verification" />}
+>
+  Review now
+  <ArrowRight data-icon="inline-end" />
+</Button>
           </div>
         </CardContent>
       </Card>
@@ -77,10 +88,20 @@ export default function DashboardPage() {
         <div className="lg:col-span-2">
           <div className="mb-3 flex items-center justify-between">
             <h2 className="font-display text-lg font-semibold">Recent Reports</h2>
-            <Button variant="ghost" size="sm" render={<Link href="/reports" />}>
+            {/* <Button variant="ghost" size="sm" render={<Link href="/reports" />}>
               View all
               <ArrowRight data-icon="inline-end" />
-            </Button>
+            </Button> */}
+            <Button
+  variant="outline"
+  size="sm"
+  className="mt-3"
+  nativeButton={false}
+  render={<Link href="/verification" />}
+>
+  Review now
+  <ArrowRight data-icon="inline-end" />
+</Button>
           </div>
           {reports.error ? (
             <ErrorState message={reports.error} onRetry={reports.reload} />
