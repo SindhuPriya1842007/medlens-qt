@@ -47,9 +47,33 @@ const security = [
   'No secrets or API keys in the frontend',
 ]
 
+// export default function LandingPage() {
+//   return (
+//     <div className="flex min-h-dvh flex-col">
+//       <SiteHeader />
 export default function LandingPage() {
   return (
     <div className="flex min-h-dvh flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareApplication',
+            name: 'MedLens',
+            applicationCategory: 'HealthApplication',
+            operatingSystem: 'Web',
+            url: 'https://medlens-swart.vercel.app',
+            description:
+              'MedLens organizes medical reports and patient information into structured, traceable records with responsible AI assistance.',
+            publisher: {
+              '@type': 'Organization',
+              name: 'MedLens',
+            },
+          }),
+        }}
+      />
+
       <SiteHeader />
 
       <main className="flex-1">

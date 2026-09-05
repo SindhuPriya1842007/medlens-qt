@@ -1,3 +1,10 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+  description:
+    'Read the MedLens Privacy Policy to understand how information is handled and protected.',
+}
 export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen bg-background px-6 py-16">

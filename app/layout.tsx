@@ -18,19 +18,70 @@ const jakarta = Plus_Jakarta_Sans({
   display: 'swap',
 })
 
+// export const metadata: Metadata = {
+//   title: 'MedLens — AI Clinical Information Intelligence',
+//   description:
+//     'Turn complex medical information into a clear, connected record. MedLens structures medical reports and patient information into traceable, reviewable records with responsible AI assistance.',
+//   generator: 'v0.app',
+//   keywords: [
+//     'medical records',
+//     'health data',
+//     'lab results',
+//     'clinical intelligence',
+//     'responsible AI',
+//     'healthcare SaaS',
+//   ],
+// }
+
 export const metadata: Metadata = {
-  title: 'MedLens — AI Clinical Information Intelligence',
+  metadataBase: new URL('https://medlens-swart.vercel.app'),
+
+  title: {
+    default: 'MedLens — AI Clinical Information Intelligence',
+    template: '%s | MedLens',
+  },
+
   description:
-    'Turn complex medical information into a clear, connected record. MedLens structures medical reports and patient information into traceable, reviewable records with responsible AI assistance.',
-  generator: 'v0.app',
+    'MedLens turns complex medical information into a clear, connected record with structured medical reports, lab trends, provenance tracking, and responsible AI assistance.',
+
   keywords: [
     'medical records',
-    'health data',
+    'medical report analysis',
     'lab results',
-    'clinical intelligence',
+    'health records',
+    'clinical information',
     'responsible AI',
-    'healthcare SaaS',
+    'healthcare AI',
   ],
+
+  authors: [
+    {
+      name: 'MedLens',
+    },
+  ],
+
+  creator: 'MedLens',
+
+  openGraph: {
+    type: 'website',
+    url: 'https://medlens-swart.vercel.app',
+    siteName: 'MedLens',
+    title: 'MedLens — AI Clinical Information Intelligence',
+    description:
+      'Turn complex medical information into a clear, connected medical record with responsible AI assistance.',
+  },
+
+  twitter: {
+    card: 'summary',
+    title: 'MedLens — AI Clinical Information Intelligence',
+    description:
+      'Structured, traceable medical information with responsible AI assistance.',
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export const viewport: Viewport = {
